@@ -12,6 +12,7 @@ import static org.junit.Assert.*;
 @RunWith(MockitoJUnitRunner.class)
 public class BurgerTest {
 
+    @Mock
     private Burger burger;
 
     @Mock
@@ -48,6 +49,7 @@ public class BurgerTest {
 
     @Test
     public void testAddIngredientMethodCall() {
+
         burger.addIngredient(ingredient);
         burger.addIngredient(ingredient);
         burger.addIngredient(ingredient);
